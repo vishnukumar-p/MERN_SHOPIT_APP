@@ -3,7 +3,7 @@ import { setUser, setIsAuthenticated, setLoading } from '../features/userSlice';
 
 export const userApi = createApi({
     reducerPath: 'userApi',
-    baseQuery: fetchBaseQuery({ baseUrl: "/api/v1" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://mern-shopit-app.vercel.app/api/v1" }),
     tagTypes:["User","AdminUsers",'AdminUser'],
     endpoints: (builder) => ({
         getMe: builder.query({
