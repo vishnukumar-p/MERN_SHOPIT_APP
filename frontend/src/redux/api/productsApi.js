@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const productApi = createApi({
     reducerPath: 'productApi',
-    baseQuery: fetchBaseQuery({ baseUrl: "/api/v1" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://mern-shopit-app.vercel.app/api/v1" }),
     tagTypes: ['Product', 'AdminProduct', 'Reviews'],
     endpoints: (builder) => ({
         getProducts: builder.query({
