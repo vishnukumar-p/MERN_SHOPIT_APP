@@ -1,0 +1,34 @@
+{
+  "name": "shopit-v2",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Ecommerce application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/app.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/app.js",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/app.js",
+    "seeder": "node backend/seeder/seeder.js"
+  },
+  "author": "Vishnukumar Perumal",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^2.5.2",
+    "mdbreact": "^5.2.0",
+    "mongoose": "^8.8.1",
+    "nodemailer": "^6.9.16",
+    "react-datepicker": "^7.5.0",
+    "stripe": "^17.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
