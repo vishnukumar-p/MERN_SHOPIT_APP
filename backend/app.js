@@ -10,11 +10,7 @@ import path from 'path'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(cors({
-    origin:[""],
-    methods:["POST","GET","PUT","DELETE"],
-    credentials: true
-}));
+app.use(cors());
 
 process.on('uncaughtException', (err)=>{
     console.log(`Error: ${err}`);
