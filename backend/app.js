@@ -9,8 +9,14 @@ import path from 'path'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const allowedOrigin = 'https://mern-shopit-app-fontend.vercel.app';
+const corsOptions = {
+  origin: allowedOrigin, 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  credentials: true 
+};
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 process.on('uncaughtException', (err)=>{
     console.log(`Error: ${err}`);
