@@ -6,20 +6,20 @@
             "use": "@vercel/node",
             "config": {
                 "includeFiles": [
-                    "/config/**",
-                    "/controllers/**",
-                    "/middlewares/**",
-                    "/models/**",
-                    "/routes/**",
-                    "/seeder/**",
-                    "/utils/**"
+                    "config/**",
+                    "controllers/**",
+                    "middlewares/**",
+                    "models/**",
+                    "routes/**",
+                    "seeder/**",
+                    "utils/**"
                 ]
             }
         }
     ],
     "routes": [
         {
-            "src": "/api/(.*)",
+            "src": "/(.*)",
             "dest": "app.js"
         }
     ]
