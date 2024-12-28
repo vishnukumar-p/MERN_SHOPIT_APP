@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-import cors from 'cors
+import cors from 'cors'
 import dotenv from 'dotenv';
 import cookieParser  from "cookie-parser";
 import { connectDatabase } from "./config/dbConnect.js";
