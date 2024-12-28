@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const allowedOrigin = 'https://mern-shopit-app-fontend.vercel.app';
 const corsOptions = {
-  origin: '*', 
+  origin: 'https://mern-shopit-app-fontend.vercel.app/', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   credentials: true 
 };
